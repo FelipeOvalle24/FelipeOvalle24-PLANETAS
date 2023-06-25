@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    background: purple;
+    font-family: 'Fjalla One', sans-serif;
+}
+/*ACA COMIENZA EL CODIGO DEL HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: black;
+    position: sticky;
+    z-index: 800;
+    top: 0;
+}
+
+header button{
+    background: black;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+#secciones{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/*ACA TERMINA EL CODIGO DEL HEADER*/
+
+/*ACA COMIENZA EL CODIGO DEL MAIN*/
+#principal{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#principal-titulo{
+    height: 15%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+#principal-titulo h1{
+    margin-top: 10%;
+}
+
+#principal-planetas{
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#principal-planetas img{
+    width: 100%;
+    height: 100%;
+}
+
+#principal-planetas a{
+    width: 12%;
+    height: 40%;
+}
+
+#principal-planetas img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+#mercurio, #venus, #tierra, #marte, #jupiter, #saturno, #urano, #neptuno{
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#mercurio div, #venus div, #tierra div, #marte div, #jupiter div, #saturno div, #urano div, #neptuno div{
+    width: 45%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mercurio-imagen img, #venus-imagen img, #tierra-imagen img, #marte-imagen img, #jupiter-imagen img, #saturno-imagen img, #urano-imagen img, #neptuno-imagen img{
+    width: 500px;
+    height: 500px;
+}
+
+#mercurio-informacion, #venus-informacion, #tierra-informacion, #marte-informacion, #jupiter-informacion, #saturno-informacion, #urano-informacion, #neptuno-informacion{
+    color: white;
+}
+
+#mercurio-informacion h1, p, button, #venus-informacion h1, p, button, #tierra-informacion h1, p, button, #marte-informacion h1, p, button, #jupiter-informacion h1, p, button, #saturno-informacion h1, p, button, #urano-informacion h1, p, button, #neptuno-informacion h1, p, button{
+    width: 60%;
+}
+
+#mercurio-informacion button, #venus-informacion button, #tierra-informacion button, #marte-informacion button, #jupiter-informacion button, #saturno-informacion button, #urano-informacion button, #neptuno-informacion button{
+    margin-top: 2%;
+    height: 40px;
+    background: rgb(32, 31, 31);
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    border: solid 1px grey;
+}
+
+#mercurio-informacion button:hover, #venus-informacion button:hover, #tierra-informacion button:hover, #marte-informacion button:hover, #jupiter-informacion button:hover, #saturno-informacion button:hover, #urano-informacion button:hover, #neptuno-informacion button:hover{
+    cursor: pointer;
+    background: rgb(113, 21, 158);
+}
+
+
+/*ACA TERMINA EL CODIGO DEL MAIN*/
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    #secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    header button{
+        height: 35px;
+        width: 85px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }    
+
+    #principal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #principal-planetas{
+        height: 100%;
+        display: block;
+    }
+    
+    #principal-planetas img{
+        width: 30%;
+        height: 30%;
+    }
+    
+    #principal-planetas a{
+        width: 12%;
+        height: 40%;
+    }
+
+    #principal-titulo h1{
+        margin-left: 2%;
+    }
+
+    #mercurio, #venus, #tierra, #marte, #jupiter, #saturno, #urano, #neptuno{
+        background: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    #mercurio div, #venus div, #tierra div, #marte div, #jupiter div, #saturno div, #urano div, #neptuno div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #mercurio-informacion h1, p, button, #venus-informacion h1, p, button, #tierra-informacion h1, p, button, #marte-informacion h1, p, button, #jupiter-informacion h1, p, button, #saturno-informacion h1, p, button, #urano-informacion h1, p, button, #neptuno-informacion h1, p, button{
+        width: 95%;
+    }
+
+    #mercurio-imagen img, #venus-imagen img, #tierra-imagen img, #marte-imagen img, #jupiter-imagen img, #saturno-imagen img, #urano-imagen img, #neptuno-imagen img{
+        width: 250px;
+        height: 250px;
+    }
+
+    body{
+        background: black;
+    }
+}
